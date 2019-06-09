@@ -1,0 +1,38 @@
+// $Id: assignment4.mpc  $
+
+project (assignment4) {
+  exename = assignment4
+  install = .
+ 
+  specific (make, gnuace) {
+    compile_flags += -std=c++11
+  }
+
+  Source_Files {
+	Calculator.cpp
+	Expr_Node_Visitor.cpp
+	Eval_Expr_Tree.cpp
+	Expr_Builder.cpp
+	Expr_Tree_Builder.cpp
+	Expr_Node.cpp
+	Number_Node.cpp
+	//Operator_Expr_Node.cpp
+	Binary_Expr_Node.cpp
+	Add_Node.cpp
+	Subtract_Node.cpp
+	Multiply_Node.cpp
+	Divide_Node.cpp
+	Modulus_Node.cpp
+	Math_Expr.cpp
+	Tree_Expr.cpp
+	driver.cpp
+  }
+
+  Template_Files {
+  	Array_Base.cpp
+    	Fixed_Array.cpp
+	Array.cpp
+   	Stack.cpp
+	Queue.cpp
+  }
+}
